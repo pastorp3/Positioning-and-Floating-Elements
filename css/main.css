@@ -7,39 +7,38 @@ body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+    background-color: rgba(236, 236, 236, 0.952);
+    font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
 .times-logo {
-    width: 300px;
-    height: 30px;
-    text-emphasis: center;
     display: flex;
-    justify-content: space-around;
-    position: absolute;
-    right: 10px;
-    top: 9px;
+    align-content: center;
+    height: 10%;
+    width: 10%;
 }
 
-.title-img {
-    width: 150px;
-    height: 100px;
-}
 
+}
 .line {
     width: 50px;
 }
-
 .icons {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 20px;
+    align-self: center;
 }
-
+.article-heading {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin: 0 20px 1rem;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 2;
+    width: calc(100% - 40px);
+}
 .nav {
     background: #fff;
     border-bottom: 1px solid #e2e2e2;
@@ -47,13 +46,11 @@ body {
     padding: 8px 15px 3px;
     position: relative;
 }
-
 .icon1 {
     justify-content: space-around;
     left: 10px;
     position: absolute;
 }
-
 
 /*
 
@@ -74,7 +71,6 @@ body {
     padding-top: 10px;
     justify-content: space-between; */
 
-
 }
 .nav div {
     flex: 1;
@@ -83,12 +79,146 @@ body {
     flex: 3;
 }
 .nav-bttn {
-    height: 30px;
-    color: white;
-    background-color: rgb(86, 123, 149);
-    border-radius: 5px;
-    height: 12px;
-    margin-left: 8px;
-    padding-left: 8px;
-    border-left: 1px solid rgb(204, 204, 204);
+    width: 100px;
+    height: 20px;
+    text-emphasis: center;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 0 align-self: center;
+}
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8";
+    grid-row-gap: 50px;
+}
+.a1 {
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+    grid-area: a1;
+}
+.a1 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+figcaption {
+    margin-right: 7px;
+    color: #666;
+    font-family: nyt-imperial,
+    georgia,
+    'times new roman',
+    times,
+    serif;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+.title-img {
+    width: 100%;
+    height: auto;
+}
+.a2 {
+    grid-area: a2;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a2 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a3 {
+    grid-area: a3;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a3 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a4 {
+    grid-area: a4;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a4 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a5 {
+    grid-area: a5;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a5 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a6 {
+    grid-area: a6;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a6 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a7 {
+    grid-area: a7;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a7 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.a8 {
+    grid-area: a8;
+    background-color: white;
+    font-size: 1.125rem;
+}
+.a8 p {
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 1.5625rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.video {
+    margin-left: 400px;
+}
+.social-media .link {
+    color: #333;
+    font-size: 12px;
+}
+.social-media a {
+    color: #333;
+}
+.date {
+    font-size: 12px;
+    color: #333;
 }
