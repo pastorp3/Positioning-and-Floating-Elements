@@ -1,5 +1,6 @@
+/* general */
+
 html {
-    font-size: 100%;
     box-sizing: border-box;
 }
 
@@ -11,34 +12,58 @@ body {
     font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
+
+/* nav */
+
 .times-logo {
-    display: flex;
-    align-content: center;
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 300px;
 }
 
-
-}
 .line {
-    width: 50px;
+    width: 100px;
 }
+
 .icons {
     width: 10px;
     height: 20px;
-    align-self: center;
 }
-.article-heading {
-    font-size: 25px;
-    font-weight: 700;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin: 0 20px 1rem;
-    max-width: 600px;
-    margin-left: 20px;
-    margin-right: 2;
-    width: calc(100% - 40px);
+
+.icons li {
+    margin-right: 20px;
 }
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+
+/*
 .nav {
     background: #fff;
     border-bottom: 1px solid #e2e2e2;
@@ -46,11 +71,8 @@ body {
     padding: 8px 15px 3px;
     position: relative;
 }
-.icon1 {
-    justify-content: space-around;
-    left: 10px;
-    position: absolute;
-}
+*/
+
 
 /*
 
@@ -71,22 +93,20 @@ body {
     padding-top: 10px;
     justify-content: space-between; */
 
-}
-.nav div {
-    flex: 1;
-}
-.nav .title {
-    flex: 3;
-}
 .nav-bttn {
     width: 100px;
-    height: 20px;
-    text-emphasis: center;
-    display: flex;
-    position: absolute;
-    right: 10px;
-    top: 0 align-self: center;
+    height: 25px;
+    background-color: rgb(86, 123, 149);
+    color: white;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(86, 123, 149);
 }
+
+
+/* main */
+
 main {
     height: 100vh;
     display: grid;
@@ -94,131 +114,205 @@ main {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8";
     grid-row-gap: 50px;
 }
+
+#article-heading {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.9375rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
 .a1 {
     background-color: white;
-    text-align: center;
     margin-left: auto;
     width: 100%;
     margin-right: auto;
     grid-area: a1;
+    align-items: center;
 }
+
 .a1 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 figcaption {
     margin-right: 7px;
     color: #666;
-    font-family: nyt-imperial,
-    georgia,
-    'times new roman',
-    times,
-    serif;
+    font-family: nyt-imperial, georgia, 'times new roman', times, serif;
     font-size: 0.875rem;
     line-height: 1.125rem;
 }
+
 .title-img {
-    width: 100%;
+    width: 800px;
     height: auto;
 }
+
+.top-title {
+    text-align: center;
+}
+
+.top-text {
+    text-align: left;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
 .a2 {
     grid-area: a2;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a2 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a3 {
     grid-area: a3;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a3 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a4 {
     grid-area: a4;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a4 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a5 {
     grid-area: a5;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a5 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a6 {
     grid-area: a6;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a6 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a7 {
     grid-area: a7;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a7 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .a8 {
     grid-area: a8;
     background-color: white;
     font-size: 1.125rem;
 }
+
 .a8 p {
     margin-left: 400px;
     margin-right: 400px;
     line-height: 1.5625rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
 }
+
 .video {
     margin-left: 400px;
 }
+
 .social-media .link {
     color: #333;
     font-size: 12px;
 }
+
 .social-media a {
     color: #333;
 }
+
 .date {
     font-size: 12px;
     color: #333;
+}
+
+.media ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.media-logos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.logos {
+    margin-left: 10px;
+    padding-top: 22px;
+}
+
+.inline-text p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 7px;
+}
+
+.link {
+    color: rgb(50, 104, 145);
+}
+
+.a3 h3 {
+    margin-left: 400px;
+}
+
+.text-small p {
+    line-height: 6px;
+    font-size: 10px;
 }
