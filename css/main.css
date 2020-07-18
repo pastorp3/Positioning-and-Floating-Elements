@@ -87,7 +87,6 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10";
-    grid-row-gap: 50px;
 }
 
 #article-heading {
@@ -359,11 +358,13 @@ figcaption {
 .container {
     width: 100%;
     height: 70%;
+    margin-left: 70px;
 }
 
 .side-div {
     width: 40%;
     padding: 10px;
+    margin-right: 70px;
 }
 
 .gallery {
@@ -570,8 +571,12 @@ li a:hover {
 }
 
 .left {
-    width: 80%;
+    width: 79%;
     display: flex;
+}
+
+.center {
+    width: 01%;
 }
 
 .right {
@@ -612,4 +617,37 @@ li a:hover {
 
 .title-f {
     font-size: 15px !important;
+}
+
+.a11 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: white;
+}
+
+.a11 p {
+    font-size: 12px;
+    color: #666;
+}
+
+.line-bottom {
+    width: 1200px;
+}
+
+.v-line {
+    width: 0.5px;
+    height: 370px;
+}
+
+.inside-line {
+    width: 150px;
+    margin-right: 50%;
+}
+
+.icon-bottom {
+    width: 13px;
+    height: auto;
+    margin-right: 2px;
 }
