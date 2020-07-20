@@ -18,6 +18,7 @@ body {
   height: 25px !important;
   width: 200px !important;
   padding-top: 0;
+  padding-left: 70px;
 }
 
 .line {
@@ -268,6 +269,14 @@ main {
   text-align: left;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+
 .media ul {
   list-style-type: none;
   padding: 0;
@@ -361,6 +370,11 @@ main {
   text-align: center;
 }
 
+.a11 p {
+  font-size: 12px;
+  color: #666;
+}
+
 .a9 {
   display: flex;
   margin: 0;
@@ -407,6 +421,18 @@ main {
   padding-left: 30px;
 }
 
+li a {
+  display: block;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 0;
+  text-decoration: none;
+  height: 50px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+
 .container .sub-article p {
   padding-left: 20px;
   cursor: pointer;
@@ -424,6 +450,7 @@ main {
 .center {
   width: 50%;
   height: 50%;
+  width: 01%;
 }
 
 .inf-images {
@@ -531,26 +558,6 @@ main {
   margin-right: 20px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  color: white;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding-top: 10px;
-  padding-bottom: 0;
-  text-decoration: none;
-  height: 50px;
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.375rem;
-}
-
 li a:hover {
   color: grey;
 }
@@ -558,12 +565,6 @@ li a:hover {
 .a10 {
   grid-area: a10;
   background-color: white !important;
-}
-
-.times-logo {
-  width: 300px;
-  height: auto;
-  padding-left: 70px;
 }
 
 .top-fotter {
@@ -583,10 +584,6 @@ li a:hover {
 .left {
   width: 79%;
   display: flex;
-}
-
-.center {
-  width: 01%;
 }
 
 .right {
@@ -637,11 +634,6 @@ li a:hover {
   background-color: white;
 }
 
-.a11 p {
-  font-size: 12px;
-  color: #666;
-}
-
 .line-bottom {
   width: 1200px;
 }
@@ -660,6 +652,11 @@ li a:hover {
   width: 13px;
   height: auto;
   margin-right: 2px;
+}
+
+.a11 p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .left .f1 p:hover {
@@ -687,11 +684,6 @@ li a:hover {
   cursor: pointer;
 }
 
-.a11 p:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .right strong:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -712,9 +704,8 @@ li a:hover {
 
 #article-small {
   color: #666;
-  font-size: 0 .875rem;
+  font-size:  0.875rem;
   line-height: 1.125rem;
-  font-weight: 300px;
   font-style: normal;
   padding-top: 0;
   padding-left: 300px;
@@ -722,7 +713,7 @@ li a:hover {
 }
 
 #article-small h3 {
-  margin-left: 0px;
+  margin-left: 0;
   color: #000;
 }
 
