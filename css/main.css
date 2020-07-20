@@ -12,7 +12,6 @@ body {
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
-
 /* nav */
 
 .times-logo {
@@ -74,7 +73,6 @@ body {
   margin-left: 10px;
   border: 1px solid rgb(86, 123, 149);
 }
-
 
 /* main */
 
@@ -297,12 +295,10 @@ main {
   cursor: pointer;
 }
 
-
 /* footer */
 
 .align-logos {
   padding-right: 400px;
-  ;
 }
 
 .media-logos {
@@ -342,10 +338,6 @@ main {
   cursor: pointer;
   font-size: 1.3125rem;
   line-height: 24px;
-}
-
-.link p:hover {
-  text-decoration: none;
 }
 
 .a3 h3 {
@@ -500,6 +492,10 @@ main {
   font-size: 1.3125rem;
   line-height: 24px;
   margin-right: 10px;
+}
+
+.link p:hover {
+  text-decoration: none;
 }
 
 .gallery p:hover {
