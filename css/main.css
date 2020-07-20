@@ -16,8 +16,9 @@
     /* nav */
     
     .times-logo {
-        height: 25px;
-        width: 300px;
+        height: 25px !important;
+        width: 200px !important;
+        padding-top: 0;
     }
     
     .line {
