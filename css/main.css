@@ -12,7 +12,6 @@ body {
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
-
 /* nav */
 
 .times-logo {
@@ -75,7 +74,6 @@ body {
   margin-left: 10px;
   border: 1px solid rgb(86, 123, 149);
 }
-
 
 /* main */
 
@@ -317,7 +315,6 @@ ul {
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 /* footer */
 
@@ -725,5 +722,5 @@ li a:hover {
 }
 
 .center-line {
-  width: 1%
+  width: 1%;
 }
