@@ -292,6 +292,7 @@
         text-decoration: underline;
         cursor: pointer;
     }
+    /* footer */
     
     .align-logos {
         padding-right: 400px;
@@ -708,6 +709,7 @@
     
     .co1 {
         text-align: center;
+        padding-top: 10px;
     }
     
     #article-small {
@@ -717,7 +719,8 @@
         font-weight: 300px;
         font-style: normal;
         padding-top: 0;
-        padding-left: 100px;
+        padding-left: 300px;
+        padding-right: 200px;
     }
     
     #article-small h3 {
@@ -725,6 +728,7 @@
         color: #000;
     }
     
-    .pos-text span {
-        padding-left: 0;
+    .article-small .pos-text {
+        margin-left: 100px !important;
+        margin-right: 200px;
     }
