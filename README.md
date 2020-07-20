@@ -21,7 +21,7 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Jonathas Tavares**
+👤 **José Pedraza**
 
 - Github: [@pastorp3](https://github.com/pastorp3)
 - Twitter: [@jose_pastorp3](https://twitter.com/jose_pastorp3)
