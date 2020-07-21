@@ -46,6 +46,7 @@ main {
     padding-right: 20px;
     height: 20px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 .buttons li {
@@ -91,6 +92,15 @@ main {
 
 .right-conatiner {
     width: 15%;
+    padding-right: 50px;
+    padding-top: 1000px;
+}
+
+.right-conatiner .side-container p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: nyt-cheltenham-small, georgia, "times new roman";
+    color: grey;
 }
 
 .title-img {
@@ -104,8 +114,9 @@ header {
 }
 
 .top-text {
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 156px;
+    padding-right: 156px;
+    text-align: left;
 }
 
 #article-heading {
@@ -136,12 +147,14 @@ header {
 
 .a1 {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 47em;
+    width: 30em;
     padding-left: 230px;
+    text-align: left;
+    text-justify: inter-word;
 }
 
 .media {
@@ -169,7 +182,7 @@ header {
 }
 
 .second-img {
-    width: 650px;
+    width: 520px;
     height: auto;
 }
 
@@ -177,19 +190,10 @@ header {
     color: black;
 }
 
-.a2 {
-    text-align: center;
-    font-size: 14px;
-    line-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
-}
-
 .inline-text {
     font-size: 10px;
     line-height: 7px;
+    text-align: center;
 }
 
 .line {
@@ -198,62 +202,41 @@ header {
 
 .a3 {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
+    width: 30em;
+    text-align: left;
+    text-justify: inter-word;
 }
 
-.a4 {
+.a3-text {
+    padding-left: 115px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
+    width: 30em;
+    text-align: left;
+    text-justify: inter-word;
 }
 
-.a5 {
-    text-align: center;
-    font-size: 14px;
-    line-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
+.grid-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.a6 {
-    text-align: center;
+.grid-text p {
+    font-family: nyt-franklin, arial, helvetica, sans-serif;
     font-size: 14px;
-    line-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
-}
-
-.a7 {
-    text-align: center;
-    font-size: 14px;
-    line-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
-}
-
-.a8 {
-    text-align: center;
-    font-size: 14px;
-    line-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47em;
-    padding-left: 230px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #000000;
 }
 
 .logo {
@@ -264,8 +247,20 @@ header {
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "col1" "col2" "col3" "col4" "col5" "col6" "co8" "co9" "co10";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "col1" "col2" "col3" "col4" "col5" "col6";
+}
+
+.editor-header hr:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.editor-special {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "col8" "col9" "col10";
 }
 
 .container {
@@ -281,34 +276,55 @@ section {
     margin: 0 1.5% 24px 1.5%;
 }
 
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 aside {
     width: 40%;
     background-color: white;
     color: black;
     margin: 0 1.5% 24px 1.5%;
+    line-height: 25px;
 }
 
 section img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
 
-.gallery p:hover {
-    text-decoration: grey;
+section span {
+    text-align: right;
+    color: rgb(153, 153, 153);
+    font-size: 0.625rem;
+    text-transform: none;
+    cursor: pointer;
 }
 
-.span p:hover {
-    text-decoration: grey;
+section h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-.gallery p:hover {
-    text-decoration: grey;
+section p:hover {
+    color: grey;
+    cursor: pointer;
 }
 
-li a:link {
-    text-decoration: none;
-    display: block;
-    list-style: none;
+aside ul {
+    list-style-type: none;
+    cursor: pointer;
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+aside li:hover {
+    color: grey;
+    cursor: pointer;
 }
 
 .title {
@@ -331,6 +347,7 @@ li a:link {
 
 .top-text-second {
     color: #888;
+    font-size: small;
 }
 
 .in-text {
@@ -352,9 +369,15 @@ li a:link {
     display: flex;
 }
 
+.footer-container p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .icon-bottom {
     width: 20px;
     height: 20px;
+    margin-right: 7px;
 }
 
 .left {
@@ -394,6 +417,10 @@ li a:link {
     font-size: 10px;
 }
 
+.a11 p:hover {
+    text-decoration: underline;
+}
+
 .bottom {
     padding-top: 10px;
 }
@@ -410,4 +437,76 @@ li a:link {
 
 .line-bottom {
     width: 1150px;
+}
+
+.side-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.side-container {
+    display: flex;
+    margin: 0;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.a12 {
+    display: flex;
+    margin: 0;
+    padding-right: 100px;
+    padding-left: 500px;
+    border-top: 1px solid black;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.in-a12 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in-a12 h6 {
+    margin-right: 5px;
+}
+
+.a12-text {
+    padding-top: 5px;
+}
+
+.a12-text {
+    padding-top: 5px;
+}
+
+.inf-img {
+    width: 100px;
+    height: auto;
+    padding-left: 50px;
+}
+
+.inf-text {
+    font-size: 10px;
+    text-justify: inter-word;
+    text-align: left;
+}
+
+.inf-container {
+    width: 45em;
+}
+
+.grid-a {
+    margin-right: 10px;
+}
+
+.line-div {
+    width: 100px;
+    height: 1px;
+    border: .5px solid #888;
+}
+
+#article-small span {
+    color: grey;
+    font-size: small;
+    padding-top: 0;
 }
