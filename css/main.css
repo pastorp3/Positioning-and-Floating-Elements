@@ -117,7 +117,6 @@ section p:hover {
 .right-conatiner .side-container p:hover {
   text-decoration: underline;
   cursor: pointer;
-  font-family: georgia;
   color: grey;
 }
 
