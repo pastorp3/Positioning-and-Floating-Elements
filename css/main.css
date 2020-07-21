@@ -16,7 +16,6 @@ main {
   background-color: white;
 }
 
-
 /* nav */
 
 .nav {
@@ -72,7 +71,6 @@ main {
   padding-left: 100px;
 }
 
-
 /* main */
 
 .main-container {
@@ -86,8 +84,29 @@ main {
   height: auto;
   display: grid;
   grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8";
   background-color: white;
+}
+
+.grid-text p {
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000000;
+}
+
+section p:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.footer-container p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.a11 p:hover {
+  text-decoration: underline;
 }
 
 .right-conatiner {
@@ -99,7 +118,7 @@ main {
 .right-conatiner .side-container p:hover {
   text-decoration: underline;
   cursor: pointer;
-  font-family: nyt-cheltenham-small, georgia, "times new roman";
+  font-family: nyt-cheltenham-small, georgia, times new roman;
   color: grey;
 }
 
@@ -143,17 +162,16 @@ header {
 .link {
   margin-bottom: 20px;
   color: #121212;
+  color: #326891;
 }
 
 .a1 {
   text-align: center;
   font-size: 18px;
-  line-height: auto;
   margin-left: auto;
   margin-right: auto;
   width: 30em;
   padding-left: 230px;
-  text-align: left;
   text-justify: inter-word;
 }
 
@@ -207,7 +225,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 30em;
-  text-align: left;
   text-justify: inter-word;
 }
 
@@ -215,11 +232,9 @@ header {
   padding-left: 115px;
   text-align: center;
   font-size: 18px;
-  line-height: auto;
   margin-left: auto;
   margin-right: auto;
   width: 30em;
-  text-align: left;
   text-justify: inter-word;
 }
 
@@ -229,14 +244,6 @@ header {
   grid-template-rows: 1fr 1fr;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.grid-text p {
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  color: #000000;
 }
 
 .logo {
@@ -267,6 +274,8 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 section {
@@ -274,11 +283,6 @@ section {
   background-color: white;
   color: black;
   margin: 0 1.5% 24px 1.5%;
-}
-
-.container {
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 aside {
@@ -305,11 +309,6 @@ section span {
 
 section h3:hover {
   text-decoration: underline;
-  cursor: pointer;
-}
-
-section p:hover {
-  color: grey;
   cursor: pointer;
 }
 
@@ -341,10 +340,6 @@ aside li:hover {
   width: 200px;
 }
 
-.link {
-  color: #326891;
-}
-
 .top-text-second {
   color: #888;
   font-size: small;
@@ -367,11 +362,6 @@ aside li:hover {
 
 .footer-container {
   display: flex;
-}
-
-.footer-container p:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .icon-bottom {
@@ -415,10 +405,6 @@ aside li:hover {
   padding-right: 100px;
   padding-left: 100px;
   font-size: 10px;
-}
-
-.a11 p:hover {
-  text-decoration: underline;
 }
 
 .bottom {
@@ -469,10 +455,6 @@ aside li:hover {
 
 .in-a12 h6 {
   margin-right: 5px;
-}
-
-.a12-text {
-  padding-top: 5px;
 }
 
 .a12-text {
